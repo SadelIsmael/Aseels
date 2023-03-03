@@ -15,28 +15,28 @@
             android:id="@+id/btnLogInMain"
             android:layout_width="164dp"
             android:layout_height="65dp"
-            android:layout_marginBottom="316dp"
+            android:layout_marginBottom="204dp"
             android:backgroundTint="@color/buttons"
             android:onClick="goToLogIn"
             android:text="Log In"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintHorizontal_bias="0.441"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnAllRestMAIN"
             android:layout_width="123dp"
             android:layout_height="62dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="52dp"
             android:backgroundTint="@color/buttons"
             android:onClick="gotoAllProducts"
             android:text="All Product"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/btnSignUpMain"
-            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintHorizontal_bias="0.325"
             app:layout_constraintStart_toEndOf="@+id/btnSignUpMain" />
 
         <Button
@@ -51,25 +51,47 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btnAddResMAIN"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnLogInMain"
-            app:layout_constraintVertical_bias="0.2" />
+            app:layout_constraintVertical_bias="0.829" />
 
         <Button
             android:id="@+id/btnAddResMAIN"
             android:layout_width="126dp"
             android:layout_height="57dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="144dp"
+            android:layout_marginBottom="52dp"
             android:backgroundTint="@color/buttons"
             android:onClick="gotoAddProduct"
             android:text="Add Product"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnAllRestMAIN"
-            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintHorizontal_bias="0.308"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="417dp"
+            android:layout_height="406dp"
+            android:scrollbarSize="15sp"
+            android:src="@drawable/aseel50"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="-7dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="331dp"
+            android:layout_height="86dp"
+            android:ellipsize="marquee"
+            android:hint="𝓛𝓪𝓼𝓽 𝓕𝓲𝓷𝓲𝓼𝓱 "
+            android:scrollbarSize="15sp"
+            android:text="𝓛𝓪𝓼𝓽 𝓕𝓲𝓷𝓲𝓼𝓱 "
+            android:textColor="#5CBF6565"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="271dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
