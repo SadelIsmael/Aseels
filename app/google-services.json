@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231639166834",
+    "project_id": "aseels-87634",
+    "storage_bucket": "aseels-87634.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231639166834:android:a31d8e7ac9a87f56dab7eb",
+        "android_client_info": {
+          "package_name": "com.example.aseels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231639166834-56u5875moe6q0bma9tagukoik477fupn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5JfJwY0mVlwp1vyWxkFLvOUjuVQEyRB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231639166834-56u5875moe6q0bma9tagukoik477fupn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

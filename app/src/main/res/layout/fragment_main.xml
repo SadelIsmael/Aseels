@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnLogInMain"
+            android:layout_width="164dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="316dp"
+            android:backgroundTint="@color/buttons"
+            android:onClick="goToLogIn"
+            android:text="Log In"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAllRestMAIN"
+            android:layout_width="123dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="140dp"
+            android:backgroundTint="@color/buttons"
+            android:onClick="gotoAllProducts"
+            android:text="All Product"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnSignUpMain"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toEndOf="@+id/btnSignUpMain" />
+
+        <Button
+            android:id="@+id/btnSignUpMain"
+            android:layout_width="163dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="17dp"
+            android:backgroundTint="@color/buttons"
+            android:onClick="goToSignUp"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddResMAIN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogInMain"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <Button
+            android:id="@+id/btnAddResMAIN"
+            android:layout_width="126dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="144dp"
+            android:backgroundTint="@color/buttons"
+            android:onClick="gotoAddProduct"
+            android:text="Add Product"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnAllRestMAIN"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

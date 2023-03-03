@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".AddProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAddProduct"
+            android:layout_width="217dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="8dp"
+            android:text="Add Product:"
+            android:textColor="@color/buttons"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ivPhotoAddProduct"
+            app:layout_constraintEnd_toEndOf="@+id/ivPhotoAddProduct"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spProductCatADDPRODUCT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddProAddProduct"
+            app:layout_constraintEnd_toStartOf="@+id/etProPriceAddProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etdInfoAddProduct" />
+
+        <ImageView
+            android:id="@+id/ivAddProduct"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddProAddProduct"
+            android:layout_width="151dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/buttons"
+            android:onClick="add"
+            android:text="Add "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spProductCatADDPRODUCT"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etProPriceAddProduct"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint=" Price..."
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddProAddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spProductCatADDPRODUCT"
+            app:layout_constraintTop_toBottomOf="@+id/etdInfoAddProduct" />
+
+        <ImageView
+            android:id="@+id/ivPhotoAddProduct"
+            android:layout_width="192dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="13dp"
+            android:onClick="selectPhoto"
+            app:layout_constraintBottom_toTopOf="@+id/etProductNameAddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddProduct"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/etdInfoAddProduct"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="22dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Info about the broduct..."
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/spProductCatADDPRODUCT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etProductCompanyAddPro" />
+
+        <EditText
+            android:id="@+id/etProductCompanyAddPro"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="14dp"
+            android:ems="10"
+            android:hint="Product Company..."
+            android:inputType="textPersonName"
+            android:textColor="@color/buttons"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/etdInfoAddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etProductNameAddProduct" />
+
+        <EditText
+            android:id="@+id/etProductNameAddProduct"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Product Name..."
+            android:inputType="textPersonName"
+            android:textColor="@color/buttons"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/etProductCompanyAddPro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPhotoAddProduct" />
+
+        <ImageButton
+            android:id="@+id/ivGoToMainAddProduct"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:onClick="backToMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
